@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { HeroProps } from "@/types/heroProps";
-// import { LargeSparkleIcon, SparkleIcon } from "@/assets/icons/SparkleIcon";
+import { LargeSparkleIcon, SparkleIcon } from "@/assets/icons/SparkleIcon";
 
 
 
@@ -83,7 +83,7 @@ export function Hero({
                         <div className="flex flex-col justify-center space-y-6">
                             {/* Badge */}
                             <div className="inline-flex items-center gap-3 self-start rounded-full bg-white px-4 py-2">
-                                {/* <SparkleIcon /> */}
+                                <SparkleIcon />
                                 <span className="text-[11.9px] font-medium text-blue-700">
                                     {badge.text}
                                 </span>
@@ -91,8 +91,8 @@ export function Hero({
 
                             {/* Heading */}
                             <div className="space-y-2">
-                                <h1 className="text-[51px] leading-[60px]">{heading.line1}</h1>
-                                <h1 className="text-[51px] leading-[60px]">{heading.line2}</h1>
+                                <h1 className="text-[51px] leading-[60px] font-bold">{heading.line1}</h1>
+                                <h1 className="text-[51px] leading-[60px] font-bold">{heading.line2}</h1>
                             </div>
 
                             {/* Description */}
@@ -147,7 +147,7 @@ export function Hero({
                                 {/* Card Header */}
                                 <div className="mb-6 flex items-center justify-between">
                                     <h2 className="text-[20.4px] leading-6">{formCard.title}</h2>
-                                    {/* <LargeSparkleIcon /> */}
+                                    <LargeSparkleIcon />
                                 </div>
 
                                 {/* Form */}
