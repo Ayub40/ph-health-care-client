@@ -29,7 +29,6 @@ import loginUser from "@/utility/login";
 import { useRouter } from "next/navigation";
 import checkAuthStatus from "@/utility/auth";
 
-
 const loginSchema = z.object({
     email: z.string().email({ message: "Invalid email address" }),
     password: z
@@ -105,6 +104,7 @@ export default function Login() {
                     </span>
                 </Link>
             </div>
+
 
             <Card className="w-full max-w-md">
                 <Form {...form}>
